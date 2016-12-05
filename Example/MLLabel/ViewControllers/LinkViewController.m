@@ -7,6 +7,7 @@
 //
 
 #import "LinkViewController.h"
+#import "NSString+MLLabel.h"
 
 #define LABEL ((MLLinkLabel*)self.label)
 @interface LinkViewController ()
@@ -34,7 +35,7 @@
 
 - (NSInteger)resultCount
 {
-    return 8;
+    return 10;
 }
 
 - (void)changeToResult:(int)result
@@ -47,13 +48,18 @@
     self.label.lineHeightMultiple = 1.0f;
     self.label.lineSpacing = 0.0f;
     LABEL.beforeAddLinkBlock = nil;
-    self.label.text = @"人生若只如初见，http://g.cn何事秋风悲http://baidu.com画扇。等闲变却故人心，dudl@qq.com却道故人心易变。13612341234骊山语罢清宵半，泪雨零铃终不怨。#何如 薄幸@锦衣郎，比翼连枝当日愿。";
+    self.label.text = @"人生若只如初见，何事秋风悲画扇。等闲变却故人心，http://baidu.com却😷😷😷😷http://baidu.com道13743237899故+8613978432345人心易8613743237899变。骊山语罢135-3458-9876清宵半，泪雨573946558@qq.com零铃http://192.168.0.100终不怨192.168.0.100:9090。http://baidu.com😷😷😷😷";
     LABEL.dataDetectorTypes = MLDataDetectorTypeAll;
     LABEL.allowLineBreakInsideLinks = YES;
     LABEL.linkTextAttributes = nil;
     LABEL.activeLinkTextAttributes = nil;
     
     [LABEL setDidClickLinkBlock:^(MLLink *link, NSString *linkText, MLLinkLabel *label) {
+        if (link.linkType==MLLinkTypePhoneNumber) {
+            NSString *url = [NSString stringWithFormat:@"telprompt://%@",link.linkValue];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+            return;
+        }
         NSString *tips = [NSString stringWithFormat:@"Click\nlinkType:%ld\nlinkText:%@\nlinkValue:%@",link.linkType,linkText,link.linkValue];
         SHOW_SIMPLE_TIPS(tips);
     }];
@@ -94,6 +100,9 @@
         [attrStr addAttribute:NSLinkAttributeName value:@"13612341234" range:NSMakeRange(10, 2)];
         LABEL.attributedText = attrStr;
         
+        //测试给一个含有链接的attrStr，但是不自动检测其value所对应的linkType
+        LABEL.dataDetectorTypesOfAttributedLinkValue = MLDataDetectorTypeNone;
+        
         //在设置了text后针对修改link样式的例子
         for (MLLink *link in LABEL.links) {
             if ([link.linkValue isEqualToString:@"13612341234"]) {
@@ -117,6 +126,20 @@
         
         //测试给一个含有链接的attrStr，并且自动检测其value所对应linkType
         LABEL.dataDetectorTypesOfAttributedLinkValue = MLDataDetectorTypeAll;
+    }else if (result==8) {
+        //测试不自动检测type，实际情况一般是检测，但是如果号码和库的原本正则逻辑不一致的话就需要在回调里自己去对Other类型的做处理了
+        LABEL.dataDetectorTypesOfAttributedLinkValue = MLDataDetectorTypeNone;
+        
+        NSString *str = @"张三的电话[tel=000000]李四的电话[tel=00444000]王五的电话[tel=000300]都在这了";
+        NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[tel=(\\d{6,11})\\]" options:kNilOptions error:nil];
+        self.label.attributedText = [str linkAttributedStringWithLinkRegex:regex groupIndexForDisplay:1 groupIndexForValue:1];
+    }else if (result==9) {
+        //测试不自动检测type，实际情况一般是检测，但是如果号码和库的原本正则逻辑不一致的话就需要在回调里自己去对Other类型的做处理了
+        LABEL.dataDetectorTypesOfAttributedLinkValue = MLDataDetectorTypeNone;
+        
+        NSString *str = @"张三的电话[tel=000000 name=tel1]李四的电话[tel=00444000 name=tel2]王五的电话[tel=000300 name=tel3]都在这了";
+        NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[tel=(\\d{6,11}) name=(\\w+)\\]" options:kNilOptions error:nil];
+        self.label.attributedText = [str linkAttributedStringWithLinkRegex:regex groupIndexForDisplay:2 groupIndexForValue:1];
     }
     
     self.label.frameWidth = self.view.frameWidth-10.0f*2;
