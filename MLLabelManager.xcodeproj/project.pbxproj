@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1C9A633E1DF6DBFE0039D2C1 /* MLLabelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A633C1DF6DBFE0039D2C1 /* MLLabelManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C9A638E1DF6E1060039D2C1 /* NSAttributedString+MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63771DF6E1060039D2C1 /* NSAttributedString+MLLabel.h */; };
+		1C9A638E1DF6E1060039D2C1 /* NSAttributedString+MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63771DF6E1060039D2C1 /* NSAttributedString+MLLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A638F1DF6E1060039D2C1 /* NSAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A63781DF6E1060039D2C1 /* NSAttributedString+MLLabel.m */; };
-		1C9A63901DF6E1060039D2C1 /* NSMutableAttributedString+MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63791DF6E1060039D2C1 /* NSMutableAttributedString+MLLabel.h */; };
+		1C9A63901DF6E1060039D2C1 /* NSMutableAttributedString+MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63791DF6E1060039D2C1 /* NSMutableAttributedString+MLLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63911DF6E1060039D2C1 /* NSMutableAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A637A1DF6E1060039D2C1 /* NSMutableAttributedString+MLLabel.m */; };
-		1C9A63921DF6E1060039D2C1 /* NSString+MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A637B1DF6E1060039D2C1 /* NSString+MLLabel.h */; };
+		1C9A63921DF6E1060039D2C1 /* NSString+MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A637B1DF6E1060039D2C1 /* NSString+MLLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63931DF6E1060039D2C1 /* NSString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A637C1DF6E1060039D2C1 /* NSString+MLLabel.m */; };
-		1C9A63941DF6E1060039D2C1 /* MLExpressionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A637E1DF6E1060039D2C1 /* MLExpressionManager.h */; };
+		1C9A63941DF6E1060039D2C1 /* MLExpressionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A637E1DF6E1060039D2C1 /* MLExpressionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63951DF6E1060039D2C1 /* MLExpressionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A637F1DF6E1060039D2C1 /* MLExpressionManager.m */; };
-		1C9A63961DF6E1060039D2C1 /* MLTextAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63801DF6E1060039D2C1 /* MLTextAttachment.h */; };
+		1C9A63961DF6E1060039D2C1 /* MLTextAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63801DF6E1060039D2C1 /* MLTextAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63971DF6E1060039D2C1 /* MLTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A63811DF6E1060039D2C1 /* MLTextAttachment.m */; };
-		1C9A63981DF6E1060039D2C1 /* NSAttributedString+MLExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63821DF6E1060039D2C1 /* NSAttributedString+MLExpression.h */; };
+		1C9A63981DF6E1060039D2C1 /* NSAttributedString+MLExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63821DF6E1060039D2C1 /* NSAttributedString+MLExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63991DF6E1060039D2C1 /* NSAttributedString+MLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A63831DF6E1060039D2C1 /* NSAttributedString+MLExpression.m */; };
-		1C9A639A1DF6E1060039D2C1 /* NSString+MLExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63841DF6E1060039D2C1 /* NSString+MLExpression.h */; };
+		1C9A639A1DF6E1060039D2C1 /* NSString+MLExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63841DF6E1060039D2C1 /* NSString+MLExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A639B1DF6E1060039D2C1 /* NSString+MLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A63851DF6E1060039D2C1 /* NSString+MLExpression.m */; };
-		1C9A639C1DF6E1060039D2C1 /* MLLabel+Override.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63871DF6E1060039D2C1 /* MLLabel+Override.h */; };
-		1C9A639D1DF6E1060039D2C1 /* MLLabelLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63881DF6E1060039D2C1 /* MLLabelLayoutManager.h */; };
+		1C9A639C1DF6E1060039D2C1 /* MLLabel+Override.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63871DF6E1060039D2C1 /* MLLabel+Override.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9A639D1DF6E1060039D2C1 /* MLLabelLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A63881DF6E1060039D2C1 /* MLLabelLayoutManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A639E1DF6E1060039D2C1 /* MLLabelLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A63891DF6E1060039D2C1 /* MLLabelLayoutManager.m */; };
-		1C9A639F1DF6E1060039D2C1 /* MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A638A1DF6E1060039D2C1 /* MLLabel.h */; };
+		1C9A639F1DF6E1060039D2C1 /* MLLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A638A1DF6E1060039D2C1 /* MLLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63A01DF6E1060039D2C1 /* MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A638B1DF6E1060039D2C1 /* MLLabel.m */; };
-		1C9A63A11DF6E1060039D2C1 /* MLLinkLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A638C1DF6E1060039D2C1 /* MLLinkLabel.h */; };
+		1C9A63A11DF6E1060039D2C1 /* MLLinkLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A638C1DF6E1060039D2C1 /* MLLinkLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C9A63A21DF6E1060039D2C1 /* MLLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A638D1DF6E1060039D2C1 /* MLLinkLabel.m */; };
 /* End PBXBuildFile section */
 
@@ -295,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -340,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
